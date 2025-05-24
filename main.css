@@ -1,0 +1,64 @@
+
+
+  /*  INNER STYLE(S) */
+
+
+html, body {
+  position: fixed; min-width: 100vw; max-width: 100vw;
+  min-height: 100vh; max-height: 100vh; user-select: none;
+  width: 100vw; height: max-content; font: 15px "AsapCM";
+  text-align: center; background: rgb(10, 15, 20);
+  color: rgb(150, 150, 175); margin: 0; padding: 0;
+  inset: 0; overflow: hidden scroll;
+}
+* {
+  position: relative; width: auto; height: auto;
+  font: 15px "AsapCM"; margin: 0; padding: 0; inset: 0;
+  overflow: hidden; scroll-behavior: smooth;
+  transition: all .25s linear;
+}
+
+
+  /*  CON BODY STYLE(S)  */
+
+#con {
+  position: fixed; display: flex; align-items: center;
+  justify-content: center; width: 100vw; height: 90vh;
+}
+#body {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: center;  width: 90%; height: max-content;
+  background: rgba(150, 150, 175, .125); border-radius: .5em;
+  box-shadow: 0 0 0 .05em rgb(150, 150, 175);
+  padding-bottom: 1.25em; inset: 0;
+}
+#bodyTxt {
+  width: 100%; font: 1.775em "AsapCB";
+  letter-spacing: .0575em; text-transform: uppercase;
+  word-spacing: .15em; background: rgba(150, 150, 175, .15);
+  box-shadow: 0 .025em 0 rgb(150, 150, 175);
+  margin: 0 0 .625em; padding: .15em 0;
+}
+.options {
+  display: flex; flex-wrap: nowrap; align-items: center;
+  justify-content: start; width: 82.5%; height: max-content;
+  border-radius: .25em; box-shadow: 0 0 0 .05em rgb(150, 150, 175);
+  margin: .275em 0; padding: .25em .575em;
+}
+.options img { width: 17.5%; image-rendering: high-quality; }
+.options p {
+  width: 80%; font: 1.275em "AsapCB"; letter-spacing: .0575em;
+  text-align: left; text-indent: 1em; text-transform: uppercase;
+}
+.options:active { background: rgba(150, 150, 175, .75); }
+#thanks {
+  position: fixed; inset: auto 0 1em; font: 1.275em "AsapCB";
+  letter-spacing: .075em; word-spacing: .055em;
+}
+
+
+  /*  IMPORT FONT(S)  */
+
+
+@font-face {font-family: "AsapCB"; src: url("/Font/AsapCondensedB.ttf");}
+@font-face {font-family: "AsapCM"; src: url("/Font/AsapCondensedM.ttf");}
